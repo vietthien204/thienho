@@ -284,7 +284,7 @@ body {
 	opacity: 0;
 }
 .navbar-default .navbar-nav>li {
-	opacity: 0;	
+	opacity: 0;
 }
 .navbar-default .navbar-nav>li>a {
 	font-family:"graphik", "libre baskerville", "times new roman", serif;
@@ -336,7 +336,7 @@ body {
 	box-shadow: none;
 }
 .main-section {
-	background: #fff url("../images/bg14.jpeg") bottom center; 
+	background: #fff url("../images/bg15.jpeg") center center; 
 	background-size: cover;
 	position: relative;
 	height: 100vh;
@@ -721,13 +721,13 @@ b {
 	position: fixed;
 	top: 50%;
 	margin-top: -40px;
-	right: 40px;	
+	right: 40px;
 	width: 64px;
 	max-height: 100px;
 	z-index: 1000;
 	opacity: 0;
 }
-ul.indicator { 
+ul.indicator {
 	margin: 0;
 	padding: 0;
 }
@@ -766,7 +766,7 @@ ul.indicator > li > a::after {
 	position: absolute;
 	top: 7px;
 	right: 0;
-	background:#999;	
+	background:#999;
 	transition: all .3s;
 }
 ul.indicator > li > a.active {
@@ -1037,7 +1037,7 @@ a.footer-email:hover {
 	background: #fff;
 }
 */
-.arrow-container > a, .arrow-container > a:visited,.arrow-container > a:focus { 
+.arrow-container > a, .arrow-container > a:visited,.arrow-container > a:focus {
 	font-family: 'graphik';
 	font-size: 0.7em;
 	letter-spacing: 2px;
@@ -1273,7 +1273,7 @@ p.saying {
     text-align: left;
     width: 100%;
     display: block;
-    
+
 }
 
 .blog-heading {
