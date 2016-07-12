@@ -1274,14 +1274,12 @@ p.saying {
 
 /*blog page*/
 .blog-banner {
-	/*background: #fff url("../images/dotted.png") top left; */
 	position: relative;
 	min-height: 600px;
 	padding: 100px 0 100px 0;
 	opacity: 0;
 	z-index: 9999;
     overflow: hidden;
-    background: #f0f0f0;
 }
 .blog-header {
     position: relative;
@@ -1289,7 +1287,7 @@ p.saying {
 }
 
 .blog-header::after {
-    content: 'Blog';
+    content: '';
     font: italic 700 500px 'Arnhem Blk';
     color: #e3e3e3;
     line-height: 420px;
@@ -1359,12 +1357,11 @@ p.saying {
 }
 .blog-title, .blog-title:active, .blog-title:focus {
     display: block;
-    font: normal 1.15em 'sfu din alt';
+    font: normal 1.2em 'sfu din alt';
     text-decoration: none;
     margin: 10px 0 10px 0;
     line-height: 1.3;
     color: #666;
-    text-transform: capitalize;
     transition: all .5s;
     -webkit-transition: all .5s;
 }
@@ -1389,6 +1386,7 @@ span.date {
     position: absolute;
     bottom: 20px;
     left: 20px;
+    text-transform: uppercase;
 }
 .newslist {
     margin: 0;
