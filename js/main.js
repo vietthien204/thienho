@@ -105,13 +105,13 @@ function scrollTopOffset(element, duration) {
 }
 
 //particle background
-document.addEventListener('DOMContentLoaded', function () {
-  particleground(document.getElementById('particles'), {
-    dotColor: '#bbb',
-    lineColor: '#ddd'
-  });
-  var intro = document.getElementById('intro');
-}, false);
+// document.addEventListener('DOMContentLoaded', function () {
+//   particleground(document.getElementById('particles'), {
+//     dotColor: '#bbb',
+//     lineColor: '#ddd'
+//   });
+//   var intro = document.getElementById('intro');
+// }, false);
 
 
 $(window).scroll(function(){

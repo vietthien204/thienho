@@ -331,7 +331,7 @@ body {
 	z-index: 9999;
 }
 
-.main-section::before {
+/*.main-section::before {
 	content: '';
 	height: 100%;
 	width: 100%;
@@ -339,7 +339,7 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-}
+}*/
 .main-banner-overlay {
 	width: 100%;
 	height: 100%;
@@ -564,8 +564,8 @@ div#second {
 	margin: 130px 0 30px 0;
 }
 p {
-	font: 0.95em "sfu din" , arial, sans-serif;
-	line-height: 1.7;
+	font: 1em "sfu din" , arial, sans-serif;
+	line-height: 1.6;
 	position: relative;
 	z-index: 99;
 	margin-bottom: 20px;
@@ -1359,8 +1359,7 @@ p.saying {
 }
 .blog-title, .blog-title:active, .blog-title:focus {
     display: block;
-    font-size: 1.1em;
-    font-weight: 600;
+    font: normal 1.15em 'sfu din alt';
     text-decoration: none;
     margin: 10px 0 10px 0;
     line-height: 1.3;
