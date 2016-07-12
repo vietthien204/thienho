@@ -3,6 +3,9 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 767px) and (orientation:portrait) {
+	.main-heading-container {
+		margin-top: 25vh;
+	}
 	.service-block.print-product {
 		margin-bottom: 80px;
 	}
@@ -57,7 +60,7 @@
 	}
 	.sub-heading {
 		width: 60%;
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 	a.rounded-btn {
 	width: 200px;
@@ -90,10 +93,7 @@
 	.service-title {
 		font-size: 1.5em;
 	}
-	.contact-section::after {
-	font-size: 30em;
-	bottom: -300px;
-	}
+
 	.scroll-container {
 	bottom: 30px;
 	}
@@ -116,7 +116,7 @@
 	}
 	.sub-heading {
 		width: 60% !important;
-		font-size: 1.4em;
+		font-size: 1.2em;
 	}
 	a.rounded-btn {
 	width: 200px;
@@ -173,10 +173,6 @@
 		opacity: 0;
 		z-index: 999;
 	}
-	.contact-section::after {
-	font-size: 30em;
-	bottom: -300px;
-	}
 	.service-heading::after {
 	font-size: 9em;
 	left: -260px;
@@ -208,7 +204,7 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 	.main-heading {
-		font-size: 6em;
+		font-size: 5em;
 	}
 	.main-heading::before {
 		top: 66px;
@@ -296,14 +292,7 @@
 	}
 
 	.service-heading {
-	font-size: 5.5em;
-	}
-	.contact-heading {
-	font-size: 5.5em;
-	}
-	.contact-section::after {
-	font-size: 30em;
-	bottom: -300px;
+	font-size: 3.5em;
 	}
 	.service-heading::after {
 	font-size: 9em;

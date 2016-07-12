@@ -1,13 +1,15 @@
+jQuery.easing.def = 'easeInOutCubic';
+
 $(window).load(function() {
 	$('.loader').fadeOut(200, function() {
     	$('.banner').addClass('fadeIn');
-    	
+
     	//javascript for main page
 		$( document ).ready(function() {
-			$('.navbar-nav').find('li').each(function(i) {	
+			$('.navbar-nav').find('li').each(function(i) {
 				$(this).delay(i*100+1000).queue(function(){$(this).addClass('animated fadeInRight')});
 		    });
-			
+
 			//toggle the menu button
 			$('#toggle').on('click',function(event) {
 				event.preventDefault();
@@ -15,7 +17,7 @@ $(window).load(function() {
 		   		$('#overlay').toggleClass('open');
 		  	});
 
-			jQuery.easing.def = 'easeInOutCubic';
+
 			$('#scroll-btn').click(function(event) {
 			event.preventDefault();
 			scrollTopOffset("slide1", 1000);
@@ -26,22 +28,22 @@ $(window).load(function() {
 			scrollTopOffset("slide0", 1000);
 
 			});
-            
+
             $(".contact-button").click(function(e) {
                 e.preventDefault();
                 scrollTopOffset("slide3", 1000);
                 $('.overlay').removeClass('open');
             });
-            
+
 			$("#search-toggle").click(function(e) {
 				e.preventDefault();
 				$("#search-box-container").fadeIn();
 			});
 			$('#search-close-btn').click(function(){
 				$("#search-box-container").fadeOut();
-			});	
-			
-			//scrolling 
+			});
+
+			//scrolling
 			$('#page-indicator').find('a').each(function(i) {
 		        $(this).click(function(event) {
 					event.preventDefault();
@@ -80,7 +82,7 @@ $(window).load(function() {
 						var item = $(this.element);
 						item.find(".animated").each(function(i){
 							//alert($(this).data("animate-order"));
-							$(this).delay($(this).data("animate-order")*follow+500).queue(function(){	
+							$(this).delay($(this).data("animate-order")*follow+500).queue(function(){
 								$(this).addClass($(this).data("animate-name"));
 							});
 						});
@@ -92,7 +94,7 @@ $(window).load(function() {
 		//end scrolling page
 		}); //end document ready
 	    });
-	
+
 });
 
 //function for scrolling page
@@ -104,10 +106,10 @@ function scrollTopOffset(element, duration) {
 
 //particle background
 document.addEventListener('DOMContentLoaded', function () {
-  /*particleground(document.getElementById('particles'), {
+  particleground(document.getElementById('particles'), {
     dotColor: '#bbb',
     lineColor: '#ddd'
-  });*/
+  });
   var intro = document.getElementById('intro');
 }, false);
 
@@ -115,4 +117,3 @@ document.addEventListener('DOMContentLoaded', function () {
 $(window).scroll(function(){
 	$(".fadeoutonscroll").css("opacity", 1 - $(window).scrollTop() / 500);
 });
-
