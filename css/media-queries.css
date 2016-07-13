@@ -218,7 +218,7 @@
 	width: 200px;
 	}
 	.welcome-heading {
-	font-size: 5.5em;
+	font-size: 5em;
 	margin: 20px 0 30px -120px;
 	position: relative;
 	}
@@ -292,7 +292,7 @@
 	}
 
 	.service-heading {
-	font-size: 3.5em;
+	font-size: 2.5em;
 	}
 	.service-heading::after {
 	font-size: 9em;

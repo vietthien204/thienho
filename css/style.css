@@ -49,7 +49,7 @@ a, a:visited {
 }
 /*overlay menu*/
 body {
-	font-family: 'sfu din', arial, sans-serif;
+	font-family: "svn-gotham", arial, sans-serif;
 	font-weight: normal;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -147,7 +147,7 @@ body {
 	top: 50%;
 	transform: translateY(-50%);
 	font-size: 2em;
-	font-family: 'sfu din alt', sans-serif;
+	font-family: "svn-gotham", sans-serif;
 	font-weight: normal;
 	text-align: center;
 	text-transform: none;
@@ -195,7 +195,7 @@ body {
 	margin: 20px 0 -4px 0;
 	font-size: 26px !important;
 	color: rgba(255,255,255,.3);
-	font-family: "sfu din";
+	font-family: "svn-gotham";
 	font-weight: 300;
 	text-align: center;
 }
@@ -219,7 +219,7 @@ body {
 	transform-origin: 100% 0%;
 }
 .overlay .copy > span {
-	font-family: "sfu din alt";
+	font-family: "svn-gotham";
 	font-size: 10px !important;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -261,7 +261,7 @@ body {
 
 .navbar-default .navbar-brand {
 	color: #fff;
-	font-family: "montserrat", sans-serif;
+	font-family: "svn-gotham", sans-serif;
 	letter-spacing: 3px;
 	font-size: 1em;
 	z-index: 9999;
@@ -274,8 +274,8 @@ body {
 }
 .navbar-default .navbar-nav>li>a {
 	color: #555;
-	font:  0.9em "sfu din alt", arial, sans-serif;
-	letter-spacing: 2px;
+	font:  0.85em "svn-gotham", arial, sans-serif;
+	letter-spacing: 1px;
 	position: relative;
 	z-index: 9999;
 	transition: all .5s;
@@ -357,7 +357,7 @@ body {
     padding: 0;
 }
 .smaller-heading {
-	font: 700 0.9em "sfu din";
+	font: 700 0.9em "svn-gotham";
 	letter-spacing: 5px;
 	color: #999;
 	text-transform: uppercase;
@@ -366,9 +366,9 @@ body {
 }
 
 .main-heading {
-	font-family: "sfu din";
+	font-family: "svn-gotham";
 	font-size: 3.4em;
-	font-weight: normal;
+	font-weight: 300;
 	color: #222;
 	position: relative;
 	z-index: 100;
@@ -385,7 +385,7 @@ body {
     overflow: hidden;
 }
 .sub-heading {
-	font: 300 1em "sfu din";
+	font: 300 1em "svn-gotham";
 	line-height: 1.5;
 	padding-left: 60px;
 	position: relative;
@@ -423,7 +423,7 @@ body {
 	margin: 40px 0;
 }
 a.readmore-btn {
-	font-family: "sfu din alt";
+	font-family: "svn-gotham";
 	font-size: 0.85em;
 	font-weight: 500;
 	color: #333;
@@ -436,7 +436,7 @@ a.readmore-btn {
 	position: relative;
 	opacity: 0;
 	z-index: 100;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	color: #111;
 }
 a.readmore-btn:hover {
@@ -527,9 +527,9 @@ a.scrolling {
 	position: relative;
 	cursor: pointer;
 	z-index: 99999;
-	letter-spacing: 6px;
+	letter-spacing: 4px;
 	text-transform: uppercase;
-	font: normal 0.8em "sfu din alt";
+	font: 500 0.75em "svn-gotham";
 	color: #222;
 	text-decoration: none;
 	text-align: center !important;
@@ -564,7 +564,7 @@ div#second {
 	margin: 130px 0 30px 0;
 }
 p {
-	font: 1em "sfu din" , arial, sans-serif;
+	font: 300 .98em "svn-gotham" , arial, sans-serif;
 	line-height: 1.6;
 	position: relative;
 	z-index: 99;
@@ -582,9 +582,9 @@ b {
 	min-height: 100vh;
 }
 .welcome-heading {
-	font-family: "sfu din", sans-serif;
+	font-family: "svn-gotham", sans-serif;
 	font-size: 3.6em;
-	font-weight: normal;
+	font-weight: 300;
 	line-height: 0.8em;
 	margin: -60px 0 0 0;
 	position: relative;
@@ -594,7 +594,7 @@ b {
 }
 .welcome-heading::after {
 	content: 'welcome';
-	font: normal 3em 'sfu din alt';
+	font: normal 3em "svn-gotham";
 	line-height: 1em;
 	color: rgba(0,0,0,.025);
 	position: absolute;
@@ -771,9 +771,8 @@ ul.indicator > li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	font-family: "sfu din alt";
-	font-weight: normal;
-	letter-spacing: 2px;
+	font-family: "svn-gotham";
+	font-weight: 500;
 }
 ul.indicator > li > a {
 	width: 100%;
@@ -825,18 +824,19 @@ ul.indicator > li > a.active::after {
 }
 
 .service-heading {
-	font-family: "sfu din";
-	font-size: 3.5em;
-	margin: 0 0 0;
-	font-weight: normal;
+	font-family: "svn-gotham";
+	font-size: 2.2em;
+	margin: 10px 0 30px 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 300;
 	line-height: 1em;
 	position: relative;
 	z-index: 9999;
-	letter-spacing: -2px;
 }
 .service-heading::after {
 	content: '';
-	font-family: "sfu din";
+	font-family: "svn-gotham";
 	font-size: 7em;
 	color: #efefef;
 	display: block;
@@ -867,7 +867,7 @@ ul.indicator > li > a.active::after {
 .service-block::before {
 	color: #ddd;
 	background: #fff;
-	font-family: 'sfu din';
+	font-family: "svn-gotham";
 	font-size: 60px;
 	font-weight: 300;
 	position: absolute;
@@ -888,8 +888,8 @@ ul.indicator > li > a.active::after {
 	content: '03.';
 }
 .service-title {
-	font-family: 'sfu din alt';
-	font-size: 1.8em;
+	font-family: "svn-gotham";
+	font-size: 1.2em;
 	color: #000;
 	padding: 0;
 	margin: 0 0 20px 0;
@@ -932,20 +932,25 @@ ul.indicator > li > a.active::after {
 	opacity: 0;
 }
 .contact-heading {
-	font-family: "sfu din";
-	font-size: 3.5em;
-	letter-spacing: -1px;
-	margin: 0 0 0;
-	font-weight: normal;
+	font-family: "svn-gotham";
+	font-size: 2.2em;
+	letter-spacing: 2px;
+	margin: 80px 0 40px 0;
+	text-transform: uppercase;
+	font-weight: 300;
 	line-height: 0.8em;
 	color: white;
 	margin-bottom: 40px;
 	z-index: 99;
 	opacity: 0;
 }
+.contact-section.shorter .contact-heading {
+	margin: 0 0 40px 0;
+}
+
 h4.contact-small-heading {
 	color: #555;
-	font-family: "sfu din alt";
+	font-family: "svn-gotham";
 	font-size: .8em;
 	letter-spacing: 1px;
 	margin-bottom: 20px;
@@ -967,7 +972,7 @@ h4.contact-small-heading {
 	padding-left: 20px;
 	position: relative;
 	z-index: 9999 !important;
-	font-family: 'sfu din';
+	font-family: "svn-gotham";
 }
 .connect-list li::before {
 	content: '';
@@ -991,7 +996,8 @@ h4.contact-small-heading {
 	transition: all .5s;
 }
 a.footer-email, a.footer-email:focus, a.footer-email:visited {
-	font-family: 'sfu din';
+	font-family: "svn-gotham";
+	font-weight: 300;
 	font-size: 1.8em;
 	transition: all .5s;
 	color: #0292c8;
@@ -1051,7 +1057,7 @@ a.footer-email:hover {
 }
 */
 .arrow-container > a, .arrow-container > a:visited,.arrow-container > a:focus {
-	font-family: 'sfu din alt';
+	font-family: "svn-gotham";
 	font-size: 0.7em;
 	letter-spacing: 2px;
 	color: #fff;
@@ -1112,11 +1118,11 @@ a.footer-email:hover {
 	text-align: right;
 	display: block;
 	height: 70px;
-	line-height: 40px;
+	line-height: 65px;
 	vertical-align: top;
 	padding: 0;
 	width: 100%;
-	font-family: "sfu din alt";
+	font-family: "svn-gotham";
 	font-size: 70px;
 	font-weight: normal;
 	color: #222;
@@ -1140,7 +1146,7 @@ a.resume, a.resume:focus, a.resume:visited {
 	display: block;
 	margin: 0px 20px 20px 0;
 	text-align: right;
-	font: normal 0.9em 'sfu din alt';
+	font: normal 0.9em "svn-gotham";
 	color: #0292c8;
 	height: 24px;
 	line-height: 24px;
@@ -1211,7 +1217,7 @@ p.saying {
     z-index: 99999;
 }
 .author {
-	font-family: 'sfu din alt';
+	font-family: "svn-gotham";
 	font-size: .55em;
 	color: #333;
 	text-transform: uppercase;
@@ -1266,8 +1272,8 @@ p.saying {
     content: '\f1d8';
 }
 .process-container .process-title {
-    font-family: "sfu din alt";
-    font-size: 1.4em;
+    font-family: "svn-gotham";
+    font-size: 1.2em;
     color: #333;
     margin: 0 0 10px 0;
 }
@@ -1319,7 +1325,7 @@ p.saying {
 .entry {
     position: relative;
     background: white;
-    padding: 0;
+    padding: 0 10px;
     margin-bottom: 30px;
     z-index: 100;
 }
@@ -1327,7 +1333,7 @@ p.saying {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 160px;
+    height: 180px;
     overflow: hidden;
     position: relative;
 }
@@ -1352,12 +1358,12 @@ p.saying {
 }
 .entry .bottom {
     min-height: 120px;
-    padding: 10px 20px 20px;
+    padding: 10px 0 0;
     position: relative;
 }
 .blog-title, .blog-title:active, .blog-title:focus {
     display: block;
-    font: normal 1.2em 'sfu din alt';
+    font: normal 1.1em "svn-gotham";
     text-decoration: none;
     margin: 10px 0 10px 0;
     line-height: 1.3;
@@ -1381,11 +1387,12 @@ p.saying {
 
 span.date {
     font-size: 0.8em;
-    color: #999;
+    font-weight: 300;
+    color: #666;
     letter-spacing: 1px;
     position: absolute;
     bottom: 20px;
-    left: 20px;
+	left: 0;
     text-transform: uppercase;
 }
 .newslist {
