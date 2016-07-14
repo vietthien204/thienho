@@ -367,7 +367,7 @@ body {
 }
 
 .main-heading {
-	font: 300 3.4em "svn-gotham", "times new roman", serif;
+	font: italic 700 3.4em "playfair display", "times new roman", serif;
 	color: #222;
 	position: relative;
 	z-index: 100;
@@ -384,7 +384,7 @@ body {
     overflow: hidden;
 }
 .sub-heading {
-	font: 300 1em "svn-gotham";
+	font: 500 1em "playfair display";
 	line-height: 1.5;
 	padding-left: 60px;
 	position: relative;
@@ -581,7 +581,7 @@ b {
 	min-height: 100vh;
 }
 .welcome-heading {
-	font: 300 3.6em "svn-gotham", sans-serif;
+	font: italic 700 3.6em "playfair display", sans-serif;
 	line-height: 0.8em;
 	margin: -60px 0 0 0;
 	position: relative;
@@ -823,12 +823,8 @@ ul.indicator > li > a.active::after {
 }
 
 .service-heading {
-	font-family: "svn-gotham";
-	font-size: 2.2em;
+	font: italic 700 2.2em "playfair display";
 	margin: 10px 0 30px 0;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	font-weight: 300;
 	line-height: 1em;
 	position: relative;
 	z-index: 9999;
@@ -931,12 +927,8 @@ ul.indicator > li > a.active::after {
 	opacity: 0;
 }
 .contact-heading {
-	font-family: "svn-gotham";
-	font-size: 2.2em;
-	letter-spacing: 2px;
+	font: italic 700 2.2em "playfair display";
 	margin: 80px 0 40px 0;
-	text-transform: uppercase;
-	font-weight: 300;
 	line-height: 0.8em;
 	color: white;
 	margin-bottom: 40px;
@@ -995,12 +987,12 @@ h4.contact-small-heading {
 	transition: all .5s;
 }
 a.footer-email, a.footer-email:focus, a.footer-email:visited {
-	font-family: "svn-gotham";
-	font-weight: 300;
-	font-size: 1.8em;
+	font: 500 1.2em "svn-gotham";
 	transition: all .5s;
 	color: #0292c8;
 	text-decoration: none;
+	margin-bottom: 30px;
+	display: block;
 }
 a.footer-email:hover {
 	text-decoration: none;
@@ -1031,7 +1023,7 @@ a.footer-email:hover {
 	height: 40px;
 	background: #fff;
 	position: absolute;
-	left: 20px;
+	left: 23px;
 	bottom: -40px;
 }
 /*
@@ -1056,8 +1048,7 @@ a.footer-email:hover {
 }
 */
 .arrow-container > a, .arrow-container > a:visited,.arrow-container > a:focus {
-	font-family: "svn-gotham";
-	font-size: 0.7em;
+	font: 700 0.7em "svn-gotham";
 	letter-spacing: 2px;
 	color: #fff;
 	display: block;
@@ -1101,7 +1092,7 @@ a.footer-email:hover {
 
 .about-heading {
 	position: relative;
-	margin: -40px 0 0 0;
+	margin: -60px 0 30px 0;
 	height: 160px;
 	z-index: 100;
 	display: block;
@@ -1110,22 +1101,20 @@ a.footer-email:hover {
 .about-heading .about-word-mask {
 	display: block;
 	overflow: hidden;
-	height: 70px;
+	height: 80px;
 	width: 100%;
 }
 .about-heading .about-word-mask > .word {
 	text-align: right;
 	display: block;
-	height: 70px;
-	line-height: 65px;
+	height: 66px;
+	line-height: 66px;
 	vertical-align: top;
 	padding: 0;
 	width: 100%;
-	font-family: "svn-gotham";
-	font-size: 70px;
-	font-weight: normal;
+	font: italic 700 65px "playfair display";
 	color: #222;
-	letter-spacing: -3px;
+	letter-spacing: 0px;
 	transform: translateY(100px);
 }
 .about-sub-heading {
@@ -1145,7 +1134,7 @@ a.resume, a.resume:focus, a.resume:visited {
 	display: block;
 	margin: 0px 20px 20px 0;
 	text-align: right;
-	font: normal 0.9em "svn-gotham";
+	font: 500 0.85em "svn-gotham";
 	color: #0292c8;
 	height: 24px;
 	line-height: 24px;
@@ -1162,12 +1151,12 @@ a.resume, a.resume:focus, a.resume:visited {
 }
 a.resume:before {
 	content: '';
-	height: 2px;
+	height: 1px;
 	width: 40px;
 	background: #0292c8;
 	position: absolute;
 	left: -50px;
-	top: 10px;
+	top: 11px;
 	transition: all .2s;
 	-webkit-transition: all .2s;
 	-moz-transition: all .2s;
@@ -1182,7 +1171,7 @@ a.resume:hover {
 	-ms-transition: all .5s;
 }
 a.resume:hover::before {
-	width: 80px;
+	width: 84px;
 	left: -20px;
 	transition: all .5s;
 	-webkit-transition: all .5s;
@@ -1216,8 +1205,7 @@ p.saying {
     z-index: 99999;
 }
 .author {
-	font-family: "svn-gotham";
-	font-size: .55em;
+	font: 500 .6em "svn-gotham";
 	color: #333;
 	text-transform: uppercase;
 	letter-spacing: 4px;

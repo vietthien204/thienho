@@ -112,7 +112,7 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
 	.main-heading {
-		font-size: 6em;
+		font-size: 5em;
 	}
 	.sub-heading {
 		width: 60% !important;
