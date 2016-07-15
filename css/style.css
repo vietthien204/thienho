@@ -146,10 +146,8 @@ body {
 	height: 60%;
 	top: 50%;
 	transform: translateY(-50%);
-	font-size: 1.4em;
-	letter-spacing: 4px;
-	font-family: "svn-gotham", sans-serif;
-	font-weight: 500;
+	letter-spacing: 3px;
+	font: 500 1.4em "svn-gotham", sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	z-index: 99 !important;
@@ -193,7 +191,7 @@ body {
 .overlay ul.main-nav li a span.number {
 	display: block;
 	padding: 0;
-	margin: 20px 0 0px 0;
+	margin: 20px 0 4px 0;
 	font-size: 26px !important;
 	color: rgba(255,255,255,.3);
 	font: italic 300 1em "playfair display";
@@ -210,7 +208,7 @@ body {
 .overlay .copy {
 	position: absolute;
 	height: 30px;
-	top: 60%;
+	top: 56%;
 	right: 30px;
 	-ms-transform: translateY(-50%) rotate(90deg);
 	-webkit-transform: translateY(-50%) rotate(90deg);
@@ -220,11 +218,10 @@ body {
 	transform-origin: 100% 0%;
 }
 .overlay .copy > span {
-	font-family: "svn-gotham";
-	font-size: 10px !important;
-	letter-spacing: 2px;
+	font: 500 10px "svn-gotham";
+	letter-spacing: 1px;
 	text-transform: uppercase;
-	color: #666;
+	color: #444;
 	z-index: 10;
 }
  @keyframes fadeInTop {
@@ -367,7 +364,7 @@ body {
 }
 
 .main-heading {
-	font: italic 700 3.4em "playfair display", "times new roman", serif;
+	font: italic 700 4em "playfair display", "times new roman", serif;
 	color: #222;
 	position: relative;
 	z-index: 100;
@@ -386,7 +383,7 @@ body {
 .sub-heading {
 	font: 300 1em "svn-gotham";
 	line-height: 1.5;
-	padding-left: 60px;
+	padding-left: 80px;
 	position: relative;
 	z-index: 99;
 	text-align: left;
@@ -397,7 +394,7 @@ body {
 .sub-heading::before {
 	content: '';
 	height: 1px;
-	width: 30px;
+	width: 50px;
 	background: #333;
 	position: absolute;
 	left: 0px;
@@ -426,7 +423,7 @@ a.readmore-btn {
 	font-size: 0.85em;
 	font-weight: 500;
 	color: #333;
-	margin: 30px 0 0 60px;
+	margin: 30px 0 0 80px;
 	padding: 2px 0px;
 	text-decoration: none;
 	cursor: pointer !important;
@@ -563,8 +560,8 @@ div#second {
 	margin: 130px 0 30px 0;
 }
 p {
-	font: 300 .9em "svn-gotham" , arial, sans-serif;
-	line-height: 1.6;
+	font: 300 .95em "svn-gotham" , arial, sans-serif;
+	line-height: 1.5;
 	position: relative;
 	z-index: 99;
 	margin-bottom: 20px;
@@ -910,6 +907,7 @@ ul.indicator > li > a.active::after {
 
 .contact-section {
 	/*background: #000 url('../images/dotted-worldmap.png') center top no-repeat;*/
+	background: #f6f6f6;
 	height: 100vh;
 	overflow: hidden;
 	position: relative;
@@ -999,7 +997,7 @@ h4.contact-small-heading::after {
 }
 
 a.footer-email {
-	font: 500 1.1em "svn-gotham";
+	font: 300 1.1em "svn-gotham";
 	color: #111;
 	margin: 30px 0 0;
 	padding: 2px 0px;
@@ -1092,7 +1090,7 @@ a.footer-email:hover::after {
 .arrow-container>span {
 	width: 1px;
 	height: 40px;
-	background: #fff;
+	background: #111;
 	position: absolute;
 	left: 23px;
 	bottom: -40px;
@@ -1121,7 +1119,7 @@ a.footer-email:hover::after {
 .arrow-container > a, .arrow-container > a:visited,.arrow-container > a:focus {
 	font: 700 0.7em "svn-gotham";
 	letter-spacing: 2px;
-	color: #fff;
+	color: #111;
 	display: block;
 	width: 150px;
 	height: 16px;
@@ -1163,7 +1161,7 @@ a.footer-email:hover::after {
 
 .about-heading {
 	position: relative;
-	margin: -60px 0 30px 0;
+	margin: -60px 0 20px 0;
 	height: 160px;
 	z-index: 100;
 	display: block;
@@ -1185,7 +1183,7 @@ a.footer-email:hover::after {
 	width: 100%;
 	font: italic 700 65px "playfair display";
 	color: #222;
-	letter-spacing: 0px;
+	letter-spacing: -1px;
 	transform: translateY(100px);
 }
 .about-sub-heading {
@@ -1196,7 +1194,7 @@ a.footer-email:hover::after {
 }
 .profile-container {
 	margin: 0px 0 0 0;
-	font-size: 1em;
+	font-size: 0.95em;
 	opacity: 0;
 }
 a.resume, a.resume:focus, a.resume:visited {
@@ -1223,7 +1221,7 @@ a.resume, a.resume:focus, a.resume:visited {
 a.resume:before {
 	content: '';
 	height: 1px;
-	width: 40px;
+	width: 0px;
 	background: #0292c8;
 	position: absolute;
 	left: -50px;
@@ -1240,10 +1238,11 @@ a.resume:hover {
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-ms-transition: all .5s;
+	padding-right: 10px;
 }
 a.resume:hover::before {
-	width: 84px;
-	left: -20px;
+	width: 30px;
+	left: -40px;
 	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -1482,14 +1481,31 @@ span.date {
 	margin-bottom: 30px;
 	width: 49%;
 	padding: 10px 0;
-	color: #333;
+	color: #222;
 	background: none;
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #ccc;
 	outline: none;
 	font: 300 1em "svn-gotham";
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+}
+.contact-form > .contact-form-input:focus, .contact-form > #content:focus {
+	border-bottom: 1px solid #333;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+}
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 .contact-form > #content {
 	display: block;
@@ -1500,11 +1516,17 @@ span.date {
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #ccc;
 	outline: none;
 	margin-bottom: 30px;
 	font: 300 1em "svn-gotham";
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
 }
+
 .contact-btn {
 	outline: none;
 	height: 36px;
@@ -1525,11 +1547,15 @@ span.date {
 	-ms-transition: all .5s;
 }
 .contact-btn.submit-btn {
-	border: 2px solid #0292c8;
+	border: 1px solid #0292c8;
 	background: #0292c8;
 	margin-right: 10px;
 }
 .contact-btn.reset-btn {
-	border: 2px solid #444;
-	background: #444;
+	border: 1px solid #444;
+	background: none;
+	color: #444;
+}
+.mt30 {
+	margin-top: 30px;
 }
