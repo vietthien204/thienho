@@ -56,7 +56,7 @@
 </div>
 <!-- end search form -->
 
-<section class="container-fluid contact-section banner animated section-slide" id="slide0">
+<section class="container-fluid contact-section-single banner animated section-slide" id="slide0">
   <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top main-nav">
       <div class="container-fluid">
@@ -98,26 +98,38 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2 class="contact-heading animated" data-animate-order="0" data-animate-name="fadeInUp">shoot me an email</h2>
+        <h2 class="contact-heading animated" data-animate-order="0" data-animate-name="fadeInUp">contact me</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 animated fade" data-animate-order="1" data-animate-name="fadeInUp">
-        <h4 class="contact-small-heading">WANNA SAY HELLO?</h4>
-        <a href="mailto:vietthien204@gmail.com" class="footer-email">vietthien204@gmail.com</a>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 animated fade" data-animate-order="2" data-animate-name="fadeInUp">
-        <h4 class="contact-small-heading">CONNECT WITH ME</h4>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+        <h4 class="contact-small-heading animated fade" data-animate-order="1" data-animate-name="fadeInUp">SHOOT ME AN EMAIL</h4>
+        <a href="mailto:thien@thienho.co" class="footer-email animated fade" data-animate-order="2" data-animate-name="fadeInUp">thien@thienho.co</a>
+
+        <h4 class="contact-small-heading animated fade" data-animate-order="2" data-animate-name="fadeInUp">CONNECT WITH ME</h4>
+
         <ul class="connect-list">
-          <li><a href="#">linkedin</a></li>
-          <li><a href="#">twitter</a></li>
-          <li><a href="#">instagram</a></li>
+          <li class="animated fade" data-animate-order="3" data-animate-name="fadeInUp"><a href="#">linkedin</a></li>
+          <li class="animated fade" data-animate-order="4" data-animate-name="fadeInUp"><a href="#">twitter</a></li>
+          <li class="animated fade" data-animate-order="5" data-animate-name="fadeInUp"><a href="#">instagram</a></li>
         </ul>
       </div>
+
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 form-container">
+        <h4 class="contact-small-heading animated fade" data-animate-order="2" data-animate-name="fadeInUp">DROP ME A LINE</h4>
+        <form action="#" class="contact-form animated fade" data-animate-order="4" data-animate-name="fadeIn">
+          <input type="text" class="contact-form-input" id="name"  value="Name"/>
+          <input type="text" class="contact-form-input" id="email" value="Email"/>
+
+          <textarea name="content" id="content" cols="30" rows="10">Your Message</textarea>
+
+          <input type="submit" class="contact-btn submit-btn" id="submit-btn" value="OK, Send."/>
+          <input type="button" class="contact-btn reset-btn" id="reset-btn" value="Reset"/>
+        </form>
+      </div>
     </div>
-
-
   </div>
+
 </section>
 </body>
 </html>

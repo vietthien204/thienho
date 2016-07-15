@@ -275,7 +275,7 @@ body {
 }
 .navbar-default .navbar-nav>li>a {
 	color: #555;
-	font:  0.85em "svn-gotham", arial, sans-serif;
+	font:  0.8em "svn-gotham", arial, sans-serif;
 	letter-spacing: 1px;
 	position: relative;
 	z-index: 9999;
@@ -298,7 +298,7 @@ body {
 	width: 0%;
 	position: absolute;
 	left: 0;
-	bottom: -3px;
+	bottom: 2px;
 	background: #555;
 	z-index: 9999;
 	transition: all 0.5s;
@@ -384,7 +384,7 @@ body {
     overflow: hidden;
 }
 .sub-heading {
-	font: 500 1em "playfair display";
+	font: 300 1em "svn-gotham";
 	line-height: 1.5;
 	padding-left: 60px;
 	position: relative;
@@ -396,11 +396,11 @@ body {
 }
 .sub-heading::before {
 	content: '';
-	height: 2px;
+	height: 1px;
 	width: 30px;
-	background: #999;
+	background: #333;
 	position: absolute;
-	left: 8px;
+	left: 0px;
 	top: 13px;
 }
  @keyframes showFromRight {
@@ -453,11 +453,11 @@ a.readmore-btn::after {
 	transition: all .3s ease-in-out;
 }
 a.readmore-btn:hover::after {
-	height: 2px;
+	height: 1px;
 	background: rgba(2, 146, 200, 0.8);
 	transition: all .3s ease-in-out;
 }
-a.rounded-btn {
+.rounded-btn {
 	margin: 20px 0;
 	color: #fff;
 	border: 2px solid transparent;
@@ -480,7 +480,7 @@ a.rounded-btn {
 	position: relative;
 	opacity: 0;
 }
-a.rounded-btn::after {
+.rounded-btn::after {
 	/*
 	content: '\f178';
 	font-family: fontAwesome;
@@ -497,14 +497,14 @@ a.rounded-btn::after {
 	transition: all .5s;
 	opacity: 0;
 }
-a.rounded-btn:hover {
+.rounded-btn:hover {
 	border: 2px solid #0292c8;
 	transition: all .3s;
 	background: none;
 	padding: 0 30px 0 12px;
 	color: #0292c8;
 }
-a.rounded-btn:hover::after {
+.rounded-btn:hover::after {
 	/*right: 18px;*/
 	opacity: 1;
 	width: 20px;
@@ -563,7 +563,7 @@ div#second {
 	margin: 130px 0 30px 0;
 }
 p {
-	font: 300 .98em "svn-gotham" , arial, sans-serif;
+	font: 300 .9em "svn-gotham" , arial, sans-serif;
 	line-height: 1.6;
 	position: relative;
 	z-index: 99;
@@ -768,9 +768,7 @@ ul.indicator > li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	font-family: "playfair display";
-	font-style: italic;
-	font-weight: 500;
+	font: 500 0.85em "svn-gotham";
 	letter-spacing: 1px;
 }
 ul.indicator > li > a {
@@ -781,7 +779,6 @@ ul.indicator > li > a {
 	position: relative;
 	transition: all .3s;
 	color: #666;
-	font-size: 14px;
 	text-decoration: none;
 	outline: none;
 }
@@ -799,7 +796,7 @@ ul.indicator > li > a::after {
 	height: 1px;
 	width: 40%;
 	position: absolute;
-	top: 10px;
+	top: 6px;
 	right: 0;
 	background:#666;
 	transition: all .3s;
@@ -823,7 +820,7 @@ ul.indicator > li > a.active::after {
 }
 
 .service-heading {
-	font: italic 700 2.2em "playfair display";
+	font: italic 700 3.2em "playfair display";
 	margin: 10px 0 30px 0;
 	line-height: 1em;
 	position: relative;
@@ -911,26 +908,32 @@ ul.indicator > li > a.active::after {
 	left: 30px;
 }
 
-
 .contact-section {
-	background: #111;
+	/*background: #000 url('../images/dotted-worldmap.png') center top no-repeat;*/
 	height: 100vh;
 	overflow: hidden;
 	position: relative;
 	padding-top: 140px;
 	z-index: 0;
 }
+.contact-section-single {
+	background: #fff;
+	padding-top: 140px;
+	z-index: 0;
+	min-height: 100vh !important;
+}
 .contact-section.shorter {
     height: 600px;
 }
 .contact-section .fade {
 	opacity: 0;
+	z-index: 0;
 }
 .contact-heading {
-	font: italic 700 2.2em "playfair display";
-	margin: 80px 0 40px 0;
+	font: italic 700 3.2em "playfair display";
+	margin: 0px 0 40px 0;
 	line-height: 0.8em;
-	color: white;
+	color: #111;
 	margin-bottom: 40px;
 	z-index: 99;
 	opacity: 0;
@@ -940,42 +943,50 @@ ul.indicator > li > a.active::after {
 }
 
 h4.contact-small-heading {
-	color: #555;
+	color: #111;
 	font-family: "svn-gotham";
-	font-size: .8em;
-	letter-spacing: 1px;
+	font-size: .9em;
 	margin-bottom: 20px;
 	position: relative;
 	margin-top: 30px;
-	z-index: 9999;
-	letter-spacing: 2px;
+	z-index: 999;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+h4.contact-small-heading::after {
+	content: '';
+	height: 1px;
+	width: 20px;
+	position: absolute;
+	left: 0;
+	bottom: -8px;
+	background: #111;
 }
 .connect-list {
 	margin: 0;
 	padding: 0;
 	display: block;
 	position: relative;
-	z-index: 9999;
+	z-index: 999;
 }
 .connect-list li {
 	list-style: none;
 	margin-bottom: 15px;
-	padding-left: 20px;
 	position: relative;
 	z-index: 9999 !important;
-	font-family: "svn-gotham";
+	font: 500 0.9em "svn-gotham";
 }
-.connect-list li::before {
+/*.connect-list li::before {
 	content: '';
 	background: #666;
-	height: 1px;
-	width: 10px;
+	height: 3px;
+	width: 3px;
 	position: absolute;
 	left: 0;
-	top: 8px;
-}
+	top: 7px;
+}*/
 .connect-list li a {
-	color: #fff;
+	color: #111;
 	transition: all .5s;
 	position: relative;
 	z-index: 9999 !important;
@@ -986,21 +997,81 @@ h4.contact-small-heading {
 	color: #0292c8;
 	transition: all .5s;
 }
-a.footer-email, a.footer-email:focus, a.footer-email:visited {
-	font: 500 1.2em "svn-gotham";
+
+a.footer-email {
+	font: 500 1.1em "svn-gotham";
+	color: #111;
+	margin: 30px 0 0;
+	padding: 2px 0px;
+	text-decoration: none;
+	cursor: pointer !important;
+	transition: all .5s;
+	box-sizing: border-box;
+	position: relative;
+	opacity: 0;
+	z-index: 100;
+	letter-spacing: 1px;
+	color: #111;
+}
+a.footer-email:hover {
+	color: #111;
+}
+a.footer-email::after {
+	background: rgba(2, 146, 200, .3);
+	content: '';
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	z-index: -10;
+	transition: all .3s ease-in-out;
+}
+a.footer-email:hover::after {
+	height: 1px;
+	background: rgba(2, 146, 200, 0.8);
+	transition: all .3s ease-in-out;
+}
+
+
+/*a.footer-email, a.footer-email:focus, a.footer-email:visited {
+	font: 300 1.2em "svn-gotham";
 	transition: all .5s;
 	color: #0292c8;
 	text-decoration: none;
 	margin-bottom: 30px;
-	display: block;
+	position: relative;
+	z-index: 999;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+}
+a.footer-email::after {
+	content: '';
+	height: 1px;
+	width: 0;
+	background: #111;
+	position: absolute;
+	left: 0;
+	bottom: 8px;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	z-index: 0 !important;
 }
 a.footer-email:hover {
 	text-decoration: none;
-	transition: all .5s;
-	color: #fff;
-	transform-origin: left;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	color: #111;
 }
-
+a.footer-email:hover::after {
+	width: 100%;
+}*/
 .floating {
 	position: relative;
 	z-index: 9999;
@@ -1197,7 +1268,7 @@ blockquote::after {
 	line-height: 1;
 }
 p.saying {
-	font: italic normal 1.4em 'playfair display';
+	font: italic normal 1em 'playfair display';
 	color: #222;
 	margin-bottom: 20px;
     line-height: 1.5;
@@ -1391,4 +1462,74 @@ span.date {
     padding: 0;
     margin: 0 0 10px 0;
     font-size: 0.9em;
+}
+.contact-form-container {
+	height: 100vh;
+	width: 60%;
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+.contact-form {
+	width: 100%;
+	opacity: 0;
+	padding: 0 0 60px 0;
+}
+.contact-form > .contact-form-input {
+	display: inline-block;
+	margin-right: .5%;
+	margin-bottom: 30px;
+	width: 49%;
+	padding: 10px 0;
+	color: #333;
+	background: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #ddd;
+	outline: none;
+	font: 300 1em "svn-gotham";
+}
+.contact-form > #content {
+	display: block;
+	width: 99%;
+	padding: 10px 0;
+	color: #333;
+	background: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #ddd;
+	outline: none;
+	margin-bottom: 30px;
+	font: 300 1em "svn-gotham";
+}
+.contact-btn {
+	outline: none;
+	height: 36px;
+	width: 140px;
+	border-radius: 18px;
+	
+	color: #fff;
+	text-transform: uppercase;
+	font: 500 .8em 'svn-gotham';
+	letter-spacing: 2px;
+	text-align: center;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	box-sizing: border-box;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+}
+.contact-btn.submit-btn {
+	border: 2px solid #0292c8;
+	background: #0292c8;
+	margin-right: 10px;
+}
+.contact-btn.reset-btn {
+	border: 2px solid #444;
+	background: #444;
 }

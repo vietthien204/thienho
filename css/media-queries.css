@@ -19,6 +19,10 @@
 	padding: 0;
 	z-index: 999;
 	}
+	.contact-form > .contact-form-input {
+	width: 100%;
+	margin-right: 0;
+	}
 }
 /*end portrait mobile*/
 
@@ -292,7 +296,7 @@
 	}
 
 	.service-heading {
-	font-size: 2.5em;
+	font-size: 3.2em;
 	}
 	.service-heading::after {
 	font-size: 9em;
