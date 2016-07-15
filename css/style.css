@@ -364,7 +364,7 @@ body {
 }
 
 .main-heading {
-	font: italic 700 4em "playfair display", "times new roman", serif;
+	font: 700 4em "playfair display", "times new roman", serif;
 	color: #222;
 	position: relative;
 	z-index: 100;
@@ -578,7 +578,7 @@ b {
 	min-height: 100vh;
 }
 .welcome-heading {
-	font: italic 700 3.6em "playfair display", sans-serif;
+	font: 700 3.6em "playfair display", sans-serif;
 	line-height: 0.8em;
 	margin: -60px 0 0 0;
 	position: relative;
@@ -817,8 +817,8 @@ ul.indicator > li > a.active::after {
 }
 
 .service-heading {
-	font: italic 700 3.2em "playfair display";
-	margin: 10px 0 30px 0;
+	font: 700 3.2em "playfair display";
+	margin: 40px 0 30px 0;
 	line-height: 1em;
 	position: relative;
 	z-index: 9999;
@@ -835,9 +835,8 @@ ul.indicator > li > a.active::after {
 	top: -35px;
 }
 .service-block {
-	border: 3px solid transparent/*#dedede*/;
 	background: white;
-	padding: 30px;
+	padding: 10px;
 	box-sizing: border-box;
 	position: relative;
 	margin-top: 30px;
@@ -851,19 +850,19 @@ ul.indicator > li > a.active::after {
 	margin-bottom: 40px;
 }
 .service-block:hover {
-	border: 3px solid #0292c8;
+	/*border: 1px solid #0292c8;*/
 }
 .service-block::before {
 	color: #ddd;
 	background: #fff;
 	font-family: "svn-gotham";
-	font-size: 60px;
+	font-size: 50px;
 	font-weight: 300;
 	position: absolute;
-	top: -32px;
+	top: 10px;
 	left: 20px;
 	padding: 0 10px;
-	line-height: 60px;
+	line-height: 50px;
 	margin: 0;
 	z-index: 99;
 }
@@ -881,7 +880,7 @@ ul.indicator > li > a.active::after {
 	font-size: 1.2em;
 	color: #000;
 	padding: 0;
-	margin: 0 0 20px 0;
+	margin: 40px 0 20px 20px;
 	line-height: 1.0;
 	position: absolute;
 	bottom: 65%;
@@ -928,7 +927,7 @@ ul.indicator > li > a.active::after {
 	z-index: 0;
 }
 .contact-heading {
-	font: italic 700 3.2em "playfair display";
+	font: 700 3.2em "playfair display";
 	margin: 0px 0 40px 0;
 	line-height: 0.8em;
 	color: #111;
@@ -1176,12 +1175,12 @@ a.footer-email:hover::after {
 .about-heading .about-word-mask > .word {
 	text-align: right;
 	display: block;
-	height: 66px;
-	line-height: 66px;
+	height: 80px;
+	line-height: 80px;
 	vertical-align: top;
 	padding: 0;
 	width: 100%;
-	font: italic 700 65px "playfair display";
+	font: 700 65px "playfair display";
 	color: #222;
 	letter-spacing: -1px;
 	transform: translateY(100px);
@@ -1478,7 +1477,7 @@ span.date {
 .contact-form > .contact-form-input {
 	display: inline-block;
 	margin-right: .5%;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	width: 49%;
 	padding: 10px 0;
 	color: #222;
